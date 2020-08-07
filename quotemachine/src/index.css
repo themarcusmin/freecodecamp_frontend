@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+}
+
+.quote-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+}
+
+.card {
+  width: 800px;
+  padding: 20px;
+}
+
+.card-action {
+  display: flex;
+}
+
+.btn-large {
+  margin: 15px;
+}
+
+.card-content {
+  height: 70%;
+  font-family: "Karla", sans-serif;
+}
+
+.card-content h4 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card-content h5 {
+  text-align: right;
+  margin: 25px;
+}
+
+.card-action > a {
+  flex: 1 1 0;
+}
+
+.card-action .new-quote {
+  text-align: center;
+}

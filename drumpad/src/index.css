@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkslategrey;
+  font-family: "Varela Round", sans-serif;
+}
+
+.DrumMachine {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.DrumMachineInner {
+  width: 900px;
+  height: 600px;
+  background-color: #323232;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  padding: 10px;
+}
+
+.firstColumn {
+  height: 540px;
+}
+
+.secondColumn {
+  height: 540px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 540px;
+  text-align: center;
+  grid-gap: 40px;
+  box-sizing: border-box;
+}
+
+.grid-container > button {
+  background-color: gray;
+  font-size: 35px;
+  padding: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.grid-container > button:active,
+button.active {
+  background-color: darkorange;
+  color: white;
+}
+
+.settings {
+  display: grid;
+  width: 100%;
+  height: 540px;
+  align-content: center;
+  justify-items: center;
+  font-size: 40px;
+  grid-auto-rows: 90px;
+  color: whitesmoke;
+  margin-left: 9px;
+}
+
+.settings > div {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 70px;
+  padding-left: 15px;
+}
+
+.powerTag {
+  line-height: 130px !important;
+  font-family: monospace;
+  font-style: italic;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.audio-name {
+  background-color: black;
+  color: gold;
+}
+
+form > p {
+  margin: 0;
+}
